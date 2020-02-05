@@ -96,7 +96,7 @@
             {
               document.getElementById('playcat').play();
               document.getElementById('input').value="CAT";
-              document.dispatchEvent('submit');
+              document.dispatchEvent("submit");
             }
             else if(value==2)
             {
@@ -109,6 +109,12 @@
             {
               document.getElementById('playduck').play();
               document.getElementById('input').value="DUCK";
+              var evt = new CustomEvent("submit", {"bubbles":true, "cancelable": true});
+              document.getElementById("sendForm").addEventListener("submit",function(event)
+              {
+                  event.preventDefault();
+                  alert('submit');
+              });
             }
           }
         </script>
