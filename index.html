@@ -102,6 +102,8 @@
             {
               document.getElementById('playdog').play();
               document.getElementById('input').value="DOG";
+              var event = new CustomEvent("submit");
+              document.dispatchEvent(event);
             }
             else if(value==3)
             {
