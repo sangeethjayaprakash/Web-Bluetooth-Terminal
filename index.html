@@ -28,40 +28,61 @@
     <link href="css/styles.css" rel="stylesheet">
 
 </head>
+
 <body>
 
+    <style>
+    body {
+      background-image: url('Dhwani.jpg');
+    }
+    </style>
+
     <div class="app">
-
         <div class="toolbar">
-
-            <div id="device-name" class="name">Terminal</div>
-
-            <div class="buttons">
-
+            <div id="device-name" class="name" align="center" >Dhwani Game
+            </div>
+            <br/>
+            <!--div class="buttons">
                 <button id="connect" type="button" aria-label="Connect">
                     <i class="material-icons">bluetooth_connected</i>
                 </button>
-
                 <button id="disconnect" type="button" aria-label="Disconnect">
                     <i class="material-icons">bluetooth_disabled</i>
                 </button>
-
-            </div>
-
+            </div-->
         </div>
-
-        <div id="terminal" class="terminal"></div>
-
+        <!--Cat-->
+        <div align="center">
+          <figure>
+            <figcaption>Who am I?</figcaption>
+            <audio controls src="cat.mp3"> Your browser does not support the <code>audio</code> element.
+            </audio>
+          </figure>
+        </div>
+        <!--Dog-->
+        <div align="center">
+          <figure>
+            <figcaption>Who am I?</figcaption>
+            <audio controls src="dog.mp3"> Your browser does not support the <code>audio</code> element.
+            </audio>
+          </figure>
+        </div>
+        <!--Duck-->
+        <div align="center">
+          <figure>
+            <figcaption>Who am I?</figcaption>
+            <audio controls src="duck.mp3"> Your browser does not support the <code>audio</code> element.
+            </audio>
+          </figure>
+        </div>
+        <div id="terminal" class="terminal">
+        </div>
         <form id="send-form" class="send-form">
-
             <input id="input" type="text" aria-label="Input" autocomplete="off" placeholder="Type something to send...">
-
             <button type="submit" aria-label="Send">
                 <i class="material-icons">send</i>
             </button>
-
         </form>
-
     </div>
 
     <script src="js/BluetoothTerminal.js"></script>
