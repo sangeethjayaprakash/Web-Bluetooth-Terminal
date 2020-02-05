@@ -54,30 +54,68 @@
         <!--Cat-->
         <div align="center">
           <figure>
-           <figure>
-            <figcaption>Who am I?</figcaption>
-            <audio id="player" src="https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/cat.mp3"> Your browser does not support the <code>audio</code> element.
+            <figcaption>Identify The Animal Sound</figcaption>
+            <audio id="playcat" src= "https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/cat.mp3"> Your browser does not support the <code>audio</code> element.
             </audio>
-            <button type="submit" aria-label="Send" value="CAT"><button onclick="document.getElementById('player').play();document.getElementById('input').value='CAT'"><i class="material-icons">send</i></button>
+            <p><br/><p/>
+            <div>
+                <img src="play.jpg" width="300" height="300" onclick="change(1);" />
+            </div>
           </figure>
         </div>
-        <!--Dog-->
+
         <div align="center">
           <figure>
-            <figcaption>Who am I?</figcaption>
-            <audio controls src="https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/dog.mp3" > Your browser does not support the <code>audio</code> element.
+            <figcaption>Identify The Animal Sound</figcaption>
+            <audio id="playdog" src= "https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/dog.mp3"> Your browser does not support the <code>audio</code> element.
             </audio>
-              
+            <p><br/><p/>
+            <div>
+                <img src="play.jpg" width="300" height="300" onclick="change(2);" />
+            </div>
           </figure>
         </div>
-        <!--Duck-->
+
         <div align="center">
           <figure>
-            <figcaption>Who am I?</figcaption>
-            <audio controls src="https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/duck.mp3" > Your browser does not support the <code>audio</code> element.
+            <figcaption>Identify The Animal Sound</figcaption>
+            <audio id="playduck" src= "https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/duck.mp3"> Your browser does not support the <code>audio</code> element.
             </audio>
+            <p><br/><p/>
+            <div>
+                <img src="play.jpg" width="300" height="300" onclick="change(3);" />
+            </div>
           </figure>
         </div>
+
+
+        <script>
+          function change(value)
+          {
+            if(value==1)
+            {
+              document.getElementById('playcat').play();
+              document.getElementById('input').value="CAT";
+            }
+            else if(value==2)
+            {
+              document.getElementById('playdog').play();
+              document.getElementById('input').value="DOG";
+            }
+            else if(value==3)
+            {
+              document.getElementById('playduck').play();
+              document.getElementById('input').value="DUCK";
+            }
+          }
+        </script>
+<!--
+<audio id="player" src="sounds/cat.mp3"> Your browser does not support the <code>audio</code> element.
+</audio>
+<button type="submit" aria-label="Send" value="CAT"><button onclick="document.getElementById('player').play()"><i class="material-icons">send</i></button>
+
+-->
+
         <div id="terminal" class="terminal">
         </div>
         <form id="send-form" class="send-form">
