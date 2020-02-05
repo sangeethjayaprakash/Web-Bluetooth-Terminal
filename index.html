@@ -83,7 +83,7 @@
             </audio>
             <p><br/><p/>
             <div>
-                <img src="play.jpg" width="300" height="300" onclick="change(3);" />
+              <button type="submit" aria-label="Send" src="play.jpg" width="300" height="300" onclick="change(3);" />
             </div>
           </figure>
         </div>
@@ -109,12 +109,6 @@
             {
               document.getElementById('playduck').play();
               document.getElementById('input').value="DUCK";
-              var evt = new CustomEvent("submit", {"bubbles":true, "cancelable": true});
-              document.getElementById("sendForm").addEventListener("submit",function(event)
-              {
-                  event.preventDefault();
-                  alert('submit');
-              });
             }
           }
         </script>
