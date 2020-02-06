@@ -110,3 +110,10 @@ terminalContainer.addEventListener('scroll', () => {
 
   isTerminalAutoScrolling = (scrollTopOffset < terminalContainer.scrollTop);
 });
+
+    var score = 0;
+    var stream = logToTerminal(data, 'in');
+    stream.trim();
+
+
+    document.getElementById('PassId').innerHTML = stream;
