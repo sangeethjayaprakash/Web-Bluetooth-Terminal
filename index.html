@@ -55,11 +55,13 @@
         <div align="center">
           <figure>
             <figcaption>Identify The Animal Sound</figcaption>
-            <audio id="playcat" src= "https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/cat.mp3"> Your browser does not support the <code>audio</code> element.
+            <!-- <audio id="playcat" src= "https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/cat.mp3"> Your browser does not support the <code>audio</code> element.
             </audio>
-            <p><br/><p/>
+            <p><br/><p/> -->
             <div>
-                <img src="play.jpg" width="50" height="50"/>
+                <button type="button" id="playcat" src="play.jpg" width="50" height="50"/>
+                <i class="material-icons">send</i>
+              </button>
             </div>
           </figure>
         </div>
@@ -118,7 +120,7 @@
 <button type="submit" aria-label="Send" value="CAT"><button onclick="document.getElementById('player').play()"><i class="material-icons">send</i></button>
 
 -->
-<!--
+
         <div id="terminal" class="terminal">
         </div>
         <form id="send-form" class="send-form">
@@ -127,7 +129,7 @@
                 <i class="material-icons">send</i>
             </button>
         </form>
-    </div> -->
+    </div>
 
     <script src="js/BluetoothTerminal.js"></script>
     <script src="js/main.js"></script>

@@ -9,6 +9,9 @@ const playCat = document.getElementById('playcat');
 const playDog = document.getElementById('playdog');
 const playDuck = document.getElementById('playduck');
 
+var cat_audio = new Audio('https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/cat.mp3');
+// audio.play();
+
 // Helpers.
 const defaultDeviceName = 'Terminal';
 const terminalAutoScrollingLimit = terminalContainer.offsetHeight / 2;
@@ -71,6 +74,7 @@ disconnectButton.addEventListener('click', () => {
 
 playCat.addEventListener('click', () => {
   event.preventDefault();
+  cat_audio.play();
   send("CAT");
 }
 );
