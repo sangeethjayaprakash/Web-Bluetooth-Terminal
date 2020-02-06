@@ -70,6 +70,7 @@ disconnectButton.addEventListener('click', () => {
 });
 
 playCat.addEventListener('click', () => {
+  event.preventDefault();
   send("CAT");
 }
 );
