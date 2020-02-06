@@ -10,7 +10,8 @@ const playDog = document.getElementById('playdog');
 const playDuck = document.getElementById('playduck');
 
 var cat_audio = new Audio('https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/cat.mp3');
-// audio.play();
+var dog_audio = new Audio('https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/dog.mp3');
+var duck_audio = new Audio('https://raw.githubusercontent.com/sangeethjayaprakash/Web-Bluetooth-Terminal/master/duck.mp3');
 
 // Helpers.
 const defaultDeviceName = 'Terminal';
@@ -76,6 +77,20 @@ playCat.addEventListener('click', () => {
   event.preventDefault();
   cat_audio.play();
   send("CAT");
+}
+);
+
+playDog.addEventListener('click', () => {
+  event.preventDefault();
+  dog_audio.play();
+  send("DOG");
+}
+);
+
+playDuck.addEventListener('click', () => {
+  event.preventDefault();
+  duck_audio.play();
+  send("DUCK");
 }
 );
 
